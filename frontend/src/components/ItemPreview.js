@@ -12,7 +12,7 @@ const mapDispatchToProps = (dispatch) => ({
     }),
   unfavorite: (slug) =>
     dispatch({
-      type: ITEM_UNFAVORITED,
+      type: ITEM_UNFAVORITED, 
       payload: agent.Items.unfavorite(slug),
     }),
 });
@@ -36,7 +36,7 @@ const ItemPreview = (props) => {
     >
       <img
         alt="item"
-        src={`${item.image? item.image : '/placeholder.png'}`}
+        src={`${item.image ? item.image : '/placeholder.png'}`}
         className="card-img-top item-img"
         style={{ borderRadius: "20px" }}
       />
